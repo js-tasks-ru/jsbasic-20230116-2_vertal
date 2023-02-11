@@ -9,8 +9,9 @@ function print(text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
+ // имя не пустое, без пробелов, минимум 4 символа.
 function isValid(name) {
-  // ваш код...
+  return name != null && !name.includes(' ') && name.length >= 4;
 }
 
 function sayHello() {
